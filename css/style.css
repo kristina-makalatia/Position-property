@@ -46,6 +46,9 @@
 	height: 600px;
 	background-color:red;
 /*	position: relative*/;
+    transition: all .3s linear .3s;
+    animation: mymove .5s infinite;
+
 }
 .box:hover{
 	background:blue;
@@ -55,6 +58,7 @@
 }
 .box:hover .wraper-box3{
    background:pink;
+   transform: rotate(45deg);
 	} 
 .wraper-box1{
 	width: 300px;
@@ -92,4 +96,9 @@
 .image1{
 	top:0;
 	right: 20px;
+}
+
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: yellow;}
 }
